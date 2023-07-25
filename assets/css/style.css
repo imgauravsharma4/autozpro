@@ -61,15 +61,15 @@ a {
   content: "";
   height: 16px;
   border-color: #e6e6e6;
-      right: calc(-23px/2);
-          width: auto;
-    left: auto;
-    position: relative;
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    border-left-width: 1px;
-    border-style: solid;
+  right: calc(-23px / 2);
+  width: auto;
+  left: auto;
+  position: relative;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  border-left-width: 1px;
+  border-style: solid;
 }
 
 .icon-list ul li a {
