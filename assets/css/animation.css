@@ -1,0 +1,19 @@
+@keyframes move-left-effects {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(150%);
+    }
+  }
+  
+  @keyframes move-right-effects {
+    from {
+      right: -100%;
+    }
+  
+    to {
+      right: 100%;
+    }
+  }

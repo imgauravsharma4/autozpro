@@ -1,0 +1,134 @@
+@media (min-width: 1350px) {
+  .navigation-header .navigation-menu {
+    left: 12%;
+    width: 237px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature-box .container .row .col-xl-2 {
+    width: 20%;
+  }
+  .mq_logo_sec_dblock {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mq_logo_sec_dnone {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .select_to_sec {
+    margin: 7px 0;
+  }
+  .select_vehicle_block span {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .select_btn_sec {
+    width: 100%;
+    margin: 7px 0;
+  }
+  .select_vehicle_block {
+    margin: 7px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    text-align: center;
+  }
+  .mobile-none,
+  .langueage_menu {
+    display: none;
+  }
+  #toggle-menu {
+    display: none;
+  }
+  .menu_section {
+    position: absolute;
+    top: 0;
+    background-color: var(--white);
+    width: 93%;
+    height: max-content;
+    z-index: 999;
+    padding-top: 80px;
+  }
+
+  .menu_section > div {
+    width: 100%;
+  }
+
+  .main-navigation {
+    position: relative;
+    width: 100%;
+  }
+
+  .close_button {
+    position: absolute;
+    top: -48px;
+    right: 47px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-navigation ul {
+    padding-left: 0;
+  }
+  .main-navigation ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  .lighting_carousel .owl-nav .owl-next {
+    right: 0%;
+  }
+
+  .mobile-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner_slider_text h2 {
+    font-size: 25px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .banner_slider_text span {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .banner_carousel .carousel-item .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: unset;
+    bottom: unset;
+  }
+  .banner_slider_text h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .banner_slider_text a {
+    font-size: 13px;
+    display: inline-block;
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-section h6 {
+    font-size: 12px;
+  }
+}
