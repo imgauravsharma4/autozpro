@@ -33,20 +33,35 @@ a {
   text-decoration: none;
   color: var(--accent);
 }
-.border-all{
+.border-all {
   border: 1px solid var(--border);
 }
-.border-top{
+.border-top {
   border-top: 1px solid var(--border);
 }
-.border-right{
+.border-right {
   border-right: 1px solid var(--border);
 }
-.border-bottom{
+.border-bottom {
   border-bottom: 1px solid var(--border);
 }
-.border-left{
+.border-left {
   border-left: 1px solid var(--border);
+}
+
+.required {
+  color: var(--highlight);
+}
+
+input:focus {
+  border-color: var(--accent) !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 /* Top Section */
 
@@ -1864,13 +1879,13 @@ div[slider] > input[type="range"]::-ms-tooltip {
   opacity: 1;
 }
 
-.values{
+.values {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.values p{
+.values p {
   margin-bottom: 0;
 }
 
@@ -1881,10 +1896,10 @@ div[slider] > input[type="range"]::-ms-tooltip {
   color: var(--white);
 }
 
-.checkBox_filters ul{
+.checkBox_filters ul {
   padding-left: 0px;
 }
-.checkBox_filters ul li{
+.checkBox_filters ul li {
   margin-bottom: 0px;
   list-style: none;
   display: flex;
@@ -1892,14 +1907,160 @@ div[slider] > input[type="range"]::-ms-tooltip {
   margin-bottom: 0.6180469716em;
   justify-content: space-between;
 }
-.checkBox_filters ul li label{
+.checkBox_filters ul li label {
   font-size: 14px;
   color: var(--text);
 }
-.checkBox_filters ul li label input{
+.checkBox_filters ul li label input {
   margin-right: 6px;
 }
-.rating svg{
+.rating svg {
   color: var(--secondary);
   font-size: 11px;
+}
+
+/* Checkout */
+.secondary_header {
+  background: url("../image/bg-breadcrumb.jpg");
+  background-position: 0 -243px;
+  background-repeat: no-repeat;
+}
+
+.theme-form label,
+.theme-form input {
+  display: block;
+}
+
+.theme-form label {
+  font-size: 14px;
+  line-height: 1.715;
+  color: var(--accent);
+  margin-bottom: 0.5em;
+}
+
+.theme-form h3 {
+  clear: both;
+  margin: 0 0 0.5407911001em;
+  color: var(--accent);
+  font-weight: 800;
+}
+.theme-form input,
+.theme-form textarea {
+  padding: 0.929em 1.25em;
+  background-color: var(--background);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border);
+  box-sizing: border-box;
+  font-weight: 400;
+  border-radius: 3px;
+  outline: 0;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+}
+
+.theme-form .select2-container {
+  width: 100% !important;
+}
+.theme-form .select2-container--default .select2-selection--single {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border);
+  background-color: var(--background);
+  border-radius: 3px;
+}
+
+.theme-table table {
+  background-color: var(--background) !important;
+}
+
+.theme-table table th,
+.theme-table table td {
+  background-color: var(--background);
+  padding: 1em 0;
+}
+
+.theme-table table th {
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: 500;
+  padding: 1em 0;
+}
+
+.checkout-description {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 30px;
+  padding: 1.3em 1.618em 1em;
+  background-color: #3d9cd2;
+
+  border-radius: 2px;
+  color: var(--white);
+  clear: both;
+  border-left: 0.6180469716em solid rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* Cart */
+.theme-cart-table img{
+  width: 90px;
+}
+
+.theme-cart-table table td, .theme-cart-table table th{
+  vertical-align: middle;
+  padding: 1.618em 0.5rem;
+}
+
+.quantity {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 120px;
+  height: 40px;
+  border: 1px solid var(--border);
+}
+
+.quantity button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+  z-index: 9;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  width: 40px;
+  height: 38px;
+  border-radius: 0;
+  color: var(--accent);
+  background-color: var(--white);
+}
+
+.quantity input{
+  padding: 9px 0;
+  width: 40px;
+  border: none;
+  -moz-appearance: textfield;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: .2px;
+  font-weight: 700;
+  border-radius: 0;
+  color: var(--accent);
+  background-color: var(--background);
+
+}
+
+
+/* Login */
+.theme-form input[type=checkbox]{
+  padding: unset;
+  display: unset;
+  width: unset;
 }
