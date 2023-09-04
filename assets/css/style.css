@@ -57,7 +57,6 @@ input:focus {
   border-color: var(--accent) !important;
 }
 
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -974,7 +973,9 @@ input::-webkit-inner-spin-button {
   transition: opacity 0.3s ease, visibility 0s ease;
 }
 .lighting_carousel .owl-nav .owl-prev,
-.lighting_carousel .owl-nav .owl-next {
+.four_item_carousel .owl-nav .owl-prev,
+.lighting_carousel .owl-nav .owl-next,
+.four_item_carousel .owl-nav .owl-next {
   position: absolute;
   display: flex;
   align-items: center;
@@ -995,10 +996,11 @@ input::-webkit-inner-spin-button {
   width: 32px;
   height: 32px;
 }
+.four_item_carousel .owl-nav .owl-prev,
 .lighting_carousel .owl-nav .owl-prev {
   left: 0%;
 }
-.lighting_carousel .owl-nav .owl-next {
+.lighting_carousel .owl-nav .owl-next, .four_item_carousel .owl-nav .owl-next {
   right: 0%;
 }
 .lighting_carousel .owl-stage-outer {
@@ -2000,15 +2002,13 @@ div[slider] > input[type="range"]::-ms-tooltip {
   border-left: 0.6180469716em solid rgba(0, 0, 0, 0.15);
 }
 
-
-
-
 /* Cart */
-.theme-cart-table img{
+.theme-cart-table img {
   width: 90px;
 }
 
-.theme-cart-table table td, .theme-cart-table table th{
+.theme-cart-table table td,
+.theme-cart-table table th {
   vertical-align: middle;
   padding: 1.618em 0.5rem;
 }
@@ -2025,7 +2025,7 @@ div[slider] > input[type="range"]::-ms-tooltip {
   border: 1px solid var(--border);
 }
 
-.quantity button{
+.quantity button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2042,25 +2042,156 @@ div[slider] > input[type="range"]::-ms-tooltip {
   background-color: var(--white);
 }
 
-.quantity input{
+.quantity input {
   padding: 9px 0;
   width: 40px;
   border: none;
   -moz-appearance: textfield;
   text-align: center;
   font-size: 12px;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
   font-weight: 700;
   border-radius: 0;
   color: var(--accent);
   background-color: var(--background);
-
 }
 
-
 /* Login */
-.theme-form input[type=checkbox]{
+.theme-form input[type="checkbox"] {
   padding: unset;
   display: unset;
   width: unset;
+}
+
+/* profile page  */
+.account-profile-img {
+  margin-right: 12px;
+  height: 80px;
+  width: 80px;
+  border-radius: 7px;
+}
+.account-profile-img img {
+  border-radius: 7px;
+  height: 80px;
+  width: 80px;
+}
+.account-details p {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.account-details h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.in_stock_des {
+  font-size: 12px;
+}
+.product_detail_block .product_heading {
+  font-weight: 800;
+  font-size: 29px;
+}
+
+.product_detail_block .pd_sku_block {
+  font-size: 13px;
+  display: block;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.product_detail_short_desc p {
+  margin: 10px 0;
+  font-size: 13px;
+  color: #111111;
+}
+
+.entry_cart_wrap {
+  border: 1px solid var(--border);
+}
+.entry_cart_wrap .product-brand-image {
+  border-bottom: 1px solid var(--border);
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 16px;
+  margin-bottom: 2px;
+  color: var(--accent);
+}
+
+.box .nav-tabs {
+  border-bottom: 3px solid var(--border);
+}
+.box .nav-tabs .nav-link:first-child{
+  margin-left: 0px;
+}
+.box .nav-tabs .nav-link {
+  border: none;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 800;
+  padding: 25px 0 20px;
+  margin: 0 35px;
+  color: var(--lighter);
+}
+.box .nav-tabs .nav-link.active {
+  color: var(--accent);
+  border-bottom: 3px solid var(--primary);
+}
+
+.accordian-box{
+  padding: 0px 30px 15px 30px;
+
+}
+
+.accordian-box .heading{
+  margin: 0;
+  text-align: left;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+  padding: 23px 20px;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 800;
+  padding: 23px 30px 30px 0px;
+}
+
+.accordian-box .accordion-button{
+  font-size: 14px;
+    font-weight: 800;
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+.accordian-box .accordion-button::after{
+  width: 0px;
+}
+.accordian-box .accordion-button:focus{
+  border: none;
+  box-shadow: unset;
+}
+
+.accordian-box .accordion-button:not(.collapsed) {
+  background-color: var(--white);
+}
+
+.accordian-box .accordion-body {
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.715;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  color: var(--text);
 }

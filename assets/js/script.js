@@ -37,6 +37,25 @@ $(".lighting_carousel").owlCarousel({
     },
   },
 });
+$(".four_item_carousel").owlCarousel({
+  items: 5,
+  margin: 10,
+  loop: true,
+  nav: true,
+  dots: false,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    576: {
+      items: 3,
+    },
+    991: {
+      items: 4,
+    },
+  },
+});
 
 $(".best_seller").owlCarousel({
   items: 3,
